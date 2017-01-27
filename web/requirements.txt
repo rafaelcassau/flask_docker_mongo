@@ -1,0 +1,5 @@
+flask
+gunicorn
+flask-mongoengine
+flask-script
+pytest
