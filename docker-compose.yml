@@ -29,7 +29,7 @@ memcached:
 
 mongo:
   restart: always
-  image: ./mongo
+  build: ./mongo
   volumes:
     - /usr/local/opt/mongodb:/data/db
   ports:
