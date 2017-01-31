@@ -29,10 +29,9 @@ memcached:
 
 mongo:
   restart: always
-  build: ./mongo
+  image: tutum/mongodb:latest
   volumes:
-    - /usr/local/opt/mongodb:/data/db
+    - /mnt/sda1/data/mongo/db:/data/db
   ports:
     - "27027:27027"
   env_file: .env
-  command: --auth

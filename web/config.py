@@ -7,6 +7,6 @@ class Config(object):
 
     MONGODB_HOST = os.environ['MONGODB_HOST']
     MONGODB_PORT = int(os.environ['MONGODB_PORT'])
-    MONGODB_DB = os.environ['MONGODB_DB']
-    # MONGODB_USERNAME = os.environ['MONGODB_USERNAME']
-    # MONGODB_PASSWORD = os.environ['MONGODB_PASSWORD']
+    MONGODB_DB = os.environ['MONGODB_DATABASE']
+    MONGODB_USERNAME = os.environ['MONGODB_USER']
+    MONGODB_PASSWORD = os.environ['MONGODB_PASS']
