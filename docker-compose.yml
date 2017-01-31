@@ -29,10 +29,10 @@ memcached:
 
 mongo:
   restart: always
-  image: mongo:3.0.4
+  image: ./mongo
   volumes:
     - /usr/local/opt/mongodb:/data/db
   ports:
     - "27027:27027"
   env_file: .env
-  command: --smallfiles
+  command: --auth
